@@ -1,0 +1,68 @@
+Determining if the log exist failed with the following output:
+Change Dir: /home/trid/oss/cmake_example/cmake/Help/guide/tutorial/Step5/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d2e9d/fast && /usr/bin/make  -f CMakeFiles/cmTC_d2e9d.dir/build.make CMakeFiles/cmTC_d2e9d.dir/build
+make[1]: Entering directory '/home/trid/oss/cmake_example/cmake/Help/guide/tutorial/Step5/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d2e9d.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d2e9d.dir/CheckSymbolExists.c.o -c /home/trid/oss/cmake_example/cmake/Help/guide/tutorial/Step5/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_d2e9d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2e9d.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_d2e9d.dir/CheckSymbolExists.c.o -o cmTC_d2e9d 
+CMakeFiles/cmTC_d2e9d.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `log'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d2e9d.dir/build.make:98: recipe for target 'cmTC_d2e9d' failed
+make[1]: *** [cmTC_d2e9d] Error 1
+make[1]: Leaving directory '/home/trid/oss/cmake_example/cmake/Help/guide/tutorial/Step5/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_d2e9d/fast' failed
+make: *** [cmTC_d2e9d/fast] Error 2
+
+
+File /home/trid/oss/cmake_example/cmake/Help/guide/tutorial/Step5/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef log
+  return ((int*)(&log))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the exp exist failed with the following output:
+Change Dir: /home/trid/oss/cmake_example/cmake/Help/guide/tutorial/Step5/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d200e/fast && /usr/bin/make  -f CMakeFiles/cmTC_d200e.dir/build.make CMakeFiles/cmTC_d200e.dir/build
+make[1]: Entering directory '/home/trid/oss/cmake_example/cmake/Help/guide/tutorial/Step5/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d200e.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d200e.dir/CheckSymbolExists.c.o -c /home/trid/oss/cmake_example/cmake/Help/guide/tutorial/Step5/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_d200e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d200e.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_d200e.dir/CheckSymbolExists.c.o -o cmTC_d200e 
+CMakeFiles/cmTC_d200e.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `exp'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d200e.dir/build.make:98: recipe for target 'cmTC_d200e' failed
+make[1]: *** [cmTC_d200e] Error 1
+make[1]: Leaving directory '/home/trid/oss/cmake_example/cmake/Help/guide/tutorial/Step5/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_d200e/fast' failed
+make: *** [cmTC_d200e/fast] Error 2
+
+
+File /home/trid/oss/cmake_example/cmake/Help/guide/tutorial/Step5/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef exp
+  return ((int*)(&exp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
